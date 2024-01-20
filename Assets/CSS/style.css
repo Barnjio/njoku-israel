@@ -1,0 +1,210 @@
+:root{
+    --primary: blue;
+    --secondary: Red;
+    --main: black;
+    --light: rgb(6, 13, 143);
+    --footer:white;
+    --body: rgb(5, 5, 128);
+    --text: white;
+    --text-md: 20px;
+    --text-sm: 16px;
+}
+
+/* BODY */
+.profile{
+    background-color: var(--body);
+}
+
+/* NAVBAR */
+.navbar{
+    background-color: var(--footer) !important;
+    box-shadow: 10 10 var(--footer) !important;
+    opacity: 90%;
+}
+.navbar .nav-item :hover{
+ color: var(--text);
+ background-color:var(--body);
+ text-decoration: underline white;
+}
+
+
+/* HOME CAROUSEL */
+.home-carousel img{
+    height: 700px;
+    filter:brightness(0.7);
+    margin-top: 8%;
+}
+
+.carousel-caption{
+    top: 45%;
+    font-size: 25px;
+    font-family:'Courier New', Courier, monospace;
+    font-weight:bold;
+   
+}
+.carousel-indicators button{
+    height: 30px !important;
+    width: 30px !important;
+    border-radius: 100%;
+    border-color: white;
+}
+
+.carousel-indicators .active {
+    background-color: white;
+}
+
+/* FOOTER */
+
+
+.footer{
+padding-bottom: 2%;
+background-color: var(--footer);
+display: flex;
+padding-top: 2%;
+}
+
+/* CONTACT */
+.contact-hero{
+        height: 350px;
+        margin-top: 7%;
+        margin-bottom: 0%;
+        filter: brightness(70%) saturate(150%) contrast(120%);
+        display: flex;
+        position: sticky;
+    }
+
+
+    /* ANIMATION */
+    @keyframes slideInRight{
+        from{
+            transform: translateX(+300px);
+        }
+        to{
+            transform: translateX(0);
+        }
+    }
+    
+    .slideInRight{
+        animation: slideInRight 1s ease-in;
+
+        /* animation-name: bounceDown;
+        animation-duration: 1s;
+        animation-timing-function:ease-in;
+        animation-delay: 0s;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+        animation-fill-mode: none; */
+    }
+
+    @keyframes slideInLeft{
+        from{
+            transform: translateX(-300px);
+        }
+        to{
+            transform: translateX(0);
+        }
+    }
+    
+    .slideInLeft{
+        animation: slideInLeft 1s ease-in;
+    }
+
+    @keyframes slideDown{
+        from{
+            transform: translateY(-300px);
+        }
+        to{
+            transform: translateY(0);
+        }
+    }
+    
+    .slideDown{
+        animation: slideDown 1s ease-in;
+    }
+
+/* PROJECTS */
+
+.projects{
+    display: flex;
+    margin-top: 3%;
+    margin-bottom: 10%;
+    margin-right: 2%;
+    
+}
+
+    h1 {
+        margin: 0
+      }
+      .box1 {
+        height: 200px;
+        width: 300px;
+        overflow: hidden;
+        border: 1px solid white;
+        background-image: url(../Images/Food\ Web.png);
+        background-size: contain;
+        margin-top: 10%;
+      }
+
+      .box2 {
+        height: 200px;
+        width: 300px;
+        overflow: hidden;
+        border: 1px solid white;
+        background-image: url(../Images/Mallrite.jpg);
+        background-size: contain;
+        margin-top: 10%;
+      }
+
+      .box3 {
+        height: 200px;
+        width: 300px;
+        overflow: hidden;
+        border: 1px solid white;
+        background-image: url(../Images/Mybio.png);
+        background-size: contain;
+        margin-top: 10%;
+      }
+
+      .box4 {
+        height: 200px;
+        width: 300px;
+        overflow: hidden;
+        border: 1px solid white;
+        background-image: url(../Images/BURGER-KING-LAUNCH-1024x553.PNG);
+        background-size: contain;
+        margin-top: 10%;
+      }
+
+      .box5 {
+        height: 200px;
+        width: 300px;
+        overflow: hidden;
+        border: 1px solid white;
+        background-image: url(../Images/BURGER-KING-LAUNCH-1024x553.PNG);
+        background-size: contain;
+        margin-top: 10%;
+      }
+
+      .box6 {
+        height: 200px;
+        width: 300px;
+        overflow: hidden;
+        border: 1px solid white;
+        background-image: url(../Images/BURGER-KING-LAUNCH-1024x553.PNG);
+        background-size: contain;
+        margin-top: 10%;
+      }
+      .hid-box {
+        top: 100%;
+        position: relative;
+        transition: all 1s ease-out;
+        background: var(--body);
+        height: 100%;
+        color: white;
+      }
+      
+      .box:hover > .hid-box{
+        top: 0;
+      }
+
+
